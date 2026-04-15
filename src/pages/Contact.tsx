@@ -148,8 +148,7 @@ export default function Contact() {
             <div className="rounded-3xl overflow-hidden shadow-2xl h-80 bg-indigo-100 flex items-center justify-center">
               <iframe
                 title="School Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.721688256617!2d3.3792!3d6.4281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjUnNDEuMiJOIDPCsDIyJzQ1LjEiRQ!5e0!3m2!1sen!2sng!4v1234567890"
-                width="100%"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.953522034631!2d77.9345!3d11.1085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907b0b2e5e6b7%3A0x4b1e5a8e5c5e5e5e!2sVSA+Nagar%2C+Tiruppur%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1234567890"                width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
