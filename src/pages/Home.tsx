@@ -106,7 +106,7 @@ export default function Home() {
             </motion.div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="relative">
-            <img src="/images/school-building.jpg" alt="School Building" className="rounded-3xl shadow-2xl w-full object-cover h-96" />
+            <img src="/public/images/og-school.png" alt="School Building" className="rounded-3xl shadow-2xl w-full object-cover h-96" />
             <div className="absolute -bottom-6 -left-6 bg-yellow-400 text-indigo-900 rounded-2xl p-5 shadow-xl">
               <p className="text-3xl font-extrabold">30+</p>
               <p className="text-sm font-semibold">Years of Excellence</p>
