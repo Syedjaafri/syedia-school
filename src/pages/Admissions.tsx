@@ -50,7 +50,7 @@ export default function Admissions() {
       <section className="relative py-24 bg-gradient-to-br from-yellow-500 to-yellow-400 overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl font-extrabold text-indigo-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Admissions 2024/2025
+            Admissions 2026/2027
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.3 } }} className="text-indigo-800 text-lg max-w-2xl mx-auto">
             Secure your child's place at Syedia Oriental Nursery & Primary School. Applications are now open!
@@ -120,10 +120,10 @@ export default function Admissions() {
               </motion.h2>
               <motion.div variants={stagger} className="space-y-4">
                 {[
-                  { level: "Creche / Pre-Nursery", fee: "₦45,000", term: "per term", color: "border-pink-400" },
-                  { level: "Nursery 1 & 2", fee: "₦55,000", term: "per term", color: "border-yellow-400" },
-                  { level: "Primary 1 – 3", fee: "₦65,000", term: "per term", color: "border-green-400" },
-                  { level: "Primary 4 – 6", fee: "₦75,000", term: "per term", color: "border-indigo-400" },
+                  { level: "Creche / Pre-Nursery", fee: " ", term: "per term", color: "border-pink-400" },
+                  { level: "Nursery 1 & 2", term: "per term", color: "border-yellow-400" },
+                  { level: "Primary 1 – 3", term: "per term", color: "border-green-400" },
+                  { level: "Primary 4 – 6", term: "per term", color: "border-indigo-400" },
                 ].map((f, i) => (
                   <motion.div key={i} variants={fadeUp} className={`bg-white border-l-4 ${f.color} rounded-xl p-4 shadow-sm flex justify-between items-center`}>
                     <div>
