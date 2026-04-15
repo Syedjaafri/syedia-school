@@ -80,7 +80,7 @@ export default function Home() {
         <motion.div ref={statsRef} initial="hidden" animate={statsInView ? "visible" : "hidden"} variants={stagger} className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
           <StatCard value={500} label="Happy Students" icon={<FaUsers />} />
           <StatCard value={30} label="Expert Teachers" icon={<FaChalkboardTeacher />} />
-          <StatCard value={15} label="Years of Excellence" icon={<FaTrophy />} />
+          <StatCard value={30} label="Years of Excellence" icon={<FaTrophy />} />
           <StatCard value={20} label="Awards Won" icon={<FaStar />} />
         </motion.div>
       </section>
