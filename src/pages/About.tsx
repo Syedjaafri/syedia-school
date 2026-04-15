@@ -55,7 +55,7 @@ export default function About() {
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/public/images/og school.png" alt="School" className="rounded-2xl shadow-lg col-span-2 h-56 object-cover" />
+              <img src="/images/og-school.png" alt="School" className="rounded-2xl shadow-lg col-span-2 h-56 object-cover" />
               <img src="/images/students-classroom.jpg" alt="Students" className="rounded-2xl shadow-lg h-40 object-cover" />
               <img src="/images/kids-activity.jpg" alt="Activities" className="rounded-2xl shadow-lg h-40 object-cover" />
             </div>
