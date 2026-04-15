@@ -10,7 +10,7 @@ const galleryItems = [
   { id: 3, src: "/images/digital-learning.jpg", caption: "Digital Learning Session", category: "Technology" },
   { id: 4, src: "/images/kids-activity.jpg", caption: "Fun Learning Activities", category: "Activities" },
   { id: 5, src: "/images/hero-banner.jpg", caption: "Happy School Life", category: "Campus" },
-  { id: 6, src: "/images/principal.jpg", caption: "School Leadership", category: "Staff" },
+  { id: 6, src: "/images/logo.jpg", caption: "School Leadership", category: "Staff" },
   { id: 7, src: "/images/students-classroom.jpg", caption: "Collaborative Learning", category: "Academic" },
   { id: 8, src: "/images/kids-activity.jpg", caption: "Art & Craft Session", category: "Activities" },
   { id: 9, src: "/images/digital-learning.jpg", caption: "Science Class", category: "Technology" },

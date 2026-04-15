@@ -23,9 +23,7 @@ export default function Contact() {
     try {
       const response = await fetch('https://syedia-school.onrender.com/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
       const data = await response.json();
@@ -64,10 +62,10 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <FaMapMarkerAlt className="text-3xl text-indigo-600" />, label: "Our Address", info: "No. 1 Syedia Street, Oriental Quarters, Nigeria", bg: "bg-indigo-50 border-indigo-200" },
-              { icon: <FaPhone className="text-3xl text-yellow-500" />, label: "Phone Numbers", info: "+234 800 000 0000\n+234 801 000 0001", bg: "bg-yellow-50 border-yellow-200" },
-              { icon: <FaEnvelope className="text-3xl text-green-500" />, label: "Email Address", info: "info@syediaschool.edu.ng\nadmissions@syediaschool.edu.ng", bg: "bg-green-50 border-green-200" },
-              { icon: <FaClock className="text-3xl text-purple-500" />, label: "School Hours", info: "Mon–Fri: 7:30am – 3:30pm\nSat: 9:00am – 12:00pm", bg: "bg-purple-50 border-purple-200" },
+              { icon: <FaMapMarkerAlt className="text-3xl text-indigo-600" />, label: "Our Address", info: "VSA Nagar, 3rd Street, Rakkiyapalayam Pirivu, Maniyakarampalayam, Kangeyam Main Road, Tiruppur", bg: "bg-indigo-50 border-indigo-200" },
+              { icon: <FaPhone className="text-3xl text-yellow-500" />, label: "Phone Numbers", info: "+91 9597099199", bg: "bg-yellow-50 border-yellow-200" },
+              { icon: <FaEnvelope className="text-3xl text-green-500" />, label: "Email Address", info: "syediagroup@gmail.com", bg: "bg-green-50 border-green-200" },
+              { icon: <FaClock className="text-3xl text-purple-500" />, label: "School Hours", info: "Mon–Fri: 9:00am – 4:00pm\nSat: 9:00am – 12:00pm", bg: "bg-purple-50 border-purple-200" },
             ].map((card, i) => (
               <motion.div key={i} variants={fadeUp} className={`${card.bg} border rounded-2xl p-6 text-center`}>
                 <div className="flex justify-center mb-3">{card.icon}</div>
@@ -110,7 +108,7 @@ export default function Contact() {
                 <motion.div variants={fadeUp} className="grid sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
-                    <input name="phone" value={form.phone} onChange={handleChange} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="+234 800 000 0000" />
+                    <input name="phone" value={form.phone} onChange={handleChange} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" placeholder="+91 9597099199" />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1">Subject *</label>
@@ -177,4 +175,4 @@ export default function Contact() {
       </section>
     </div>
   );
-}
+} 
