@@ -17,21 +17,18 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://syedia-school.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(form),
       });
-
       const data = await response.json();
-      console.log('Response:', data);
-
       if (response.ok) {
         setLoading(false);
         setSubmitted(true);
@@ -40,11 +37,11 @@ const handleSubmit = async (e: React.FormEvent) => {
         alert('Error: ' + data.message);
       }
     } catch (error) {
-      console.log('Error:', error);
       setLoading(false);
-      alert('❌ Cannot connect to server! Make sure backend is running.');
+      alert('❌ Cannot connect to server!');
     }
   };
+
   return (
     <div className="pt-[88px]">
       {/* Hero */}
@@ -161,7 +158,6 @@ const handleSubmit = async (e: React.FormEvent) => {
                 loading="lazy"
               />
             </div>
-
             {/* FAQ */}
             <div className="mt-8 space-y-4">
               <h3 className="font-bold text-indigo-900 text-xl">Frequently Asked</h3>

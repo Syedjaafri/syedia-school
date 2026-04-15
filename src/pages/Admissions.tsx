@@ -18,20 +18,19 @@ export default function Admissions() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-const handleSubmit = async (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/admission', {
+      const response = await fetch('https://syedia-school.onrender.com/api/admission', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(form),
       });
-
       const data = await response.json();
-
       if (response.ok) {
         setLoading(false);
         setSubmitted(true);
@@ -41,7 +40,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       }
     } catch (error) {
       setLoading(false);
-      alert('❌ Cannot connect to server! Make sure backend is running.');
+      alert('❌ Cannot connect to server!');
     }
   };
 
@@ -160,14 +159,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               <p className="text-green-700">Thank you for applying to Syedia Oriental. We will contact you within 2–3 working days to schedule your child's assessment.</p>
             </motion.div>
           ) : (
-            <motion.form
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={stagger}
-              onSubmit={handleSubmit}
-              className="bg-white shadow-2xl rounded-3xl p-8 border border-gray-100 space-y-5"
-            >
+            <motion.form initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} onSubmit={handleSubmit} className="bg-white shadow-2xl rounded-3xl p-8 border border-gray-100 space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <motion.div variants={fadeUp}>
                   <label className="block text-sm font-semibold text-gray-700 mb-1">Parent/Guardian Name *</label>
