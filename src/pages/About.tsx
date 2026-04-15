@@ -155,8 +155,8 @@ export default function About() {
                 I warmly invite you to join the Syedia Oriental family. Together, let us build a brighter future — one child at a time.
               </motion.p>
               <motion.div variants={fadeUp}>
-                <p className="font-bold text-indigo-900 text-lg">Mrs. Syedia Al-Rasheed</p>
-                <p className="text-gray-500 text-sm">Principal, Syedia Oriental Nursery & Primary School</p>
+                <p className="font-bold text-indigo-900 text-lg">Mr. ABUBACKER SIDDIQ , ADVOCATE</p>
+                <p className="text-gray-500 text-sm">Founder, Syedia Oriental Nursery & Primary School</p>
               </motion.div>
             </motion.div>
           </div>
