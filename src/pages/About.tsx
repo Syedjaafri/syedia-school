@@ -142,7 +142,7 @@ export default function About() {
           </motion.div>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-              <img src="/images/principal.jpg" alt="Principal" className="rounded-3xl shadow-2xl w-full h-96 object-cover" />
+              <img src="/public/images/FOUNDER.png" alt="Principal" className="rounded-3xl shadow-2xl w-full h-96 object-cover" />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
               <motion.p variants={fadeUp} className="text-gray-600 leading-relaxed mb-4 text-lg italic">
