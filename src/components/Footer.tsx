@@ -53,7 +53,7 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-yellow-400 mb-4 text-lg">Our Programs</h4>
           <ul className="space-y-2 text-indigo-300 text-sm">
-            {["Creche / Daycare", "Pre-Nursery", "Nursery 1 & 2", "Primary 1 – 6", "After School Club", "Holiday Programme"].map((p) => (
+            {["Creche / Daycare", "Pre-Nursery", "Nursery 1 & 2", "Primary 1 – 6"].map((p) => (
               <li key={p} className="flex items-center gap-2">
                 <span className="text-yellow-500">›</span> {p}
               </li>
@@ -67,20 +67,20 @@ export default function Footer() {
           <ul className="space-y-3 text-indigo-300 text-sm">
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="text-yellow-400 mt-1 shrink-0" />
-              <span>No. 1 Syedia Street, Oriental Quarters, Nigeria</span>
+              <span>VSA Nagar, 3rd Street, Rakkiyapalayam Pirivu, Maniyakarampalayam, Kangeyam Main Road, Tiruppur</span>
             </li>
             <li className="flex items-center gap-3">
               <FaPhone className="text-yellow-400 shrink-0" />
-              <span>+234 800 000 0000</span>
+              <span>+91 9597099199</span>
             </li>
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-yellow-400 shrink-0" />
-              <span>info@syediaschool.edu.ng</span>
+              <span>syediagroup@gmail.com</span>
             </li>
           </ul>
           <div className="mt-5 bg-indigo-800 rounded-xl p-4">
             <p className="text-xs text-indigo-300 mb-2">School Hours</p>
-            <p className="text-sm font-semibold">Mon – Fri: 7:30am – 3:30pm</p>
+            <p className="text-sm font-semibold">Mon – Fri: 9:00am – 4:00pm</p>
             <p className="text-xs text-indigo-300 mt-1">Saturday: 9:00am – 12:00pm</p>
           </div>
         </div>

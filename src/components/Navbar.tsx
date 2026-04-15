@@ -34,7 +34,7 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="bg-indigo-900 text-white text-xs py-1.5 px-4 flex justify-between items-center">
         <span>📞 +91 9597099199 &nbsp;|&nbsp; ✉ syediagroup@gmail.com</span>
-        <span className="hidden sm:block">🕐 Mon–Fri: 7:30am – 3:30pm</span>
+        <span className="hidden sm:block">🕐 Mon–Fri: 9:00am – 4:00pm</span>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
