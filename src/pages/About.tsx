@@ -137,7 +137,7 @@ export default function About() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-14">
             <motion.span variants={fadeUp} className="text-yellow-500 font-bold uppercase tracking-widest text-sm">Leadership</motion.span>
             <motion.h2 variants={fadeUp} className="text-3xl sm:text-4xl font-extrabold text-indigo-900 mt-2" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Message from the Principal
+              Message from the Founder / Chairman
             </motion.h2>
           </motion.div>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
